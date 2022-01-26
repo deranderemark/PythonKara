@@ -1,0 +1,65 @@
+[Ausmessen]
+l = 2 # Zwei Bäume nicht mitgezählt
+b = 1 # Kara steht im Ausgang
+
+Solange kein Baum vorn:
+	Gehe Schritt
+	b = b + 1
+
+Wenn rechts Baum:
+	dann: Drehe rechts
+	      Solange kein Baum vorn:
+	          Gehe Schritt
+	      Drehe rechts
+	      Drehe rechts
+	ansonsten: Drehe links
+
+Solange kein Baum vorn:
+	Gehe Schritt
+	l = l + 1
+
+[Verlassen]
+Drehe links
+
+Solange Baum rechts und kein Baum vorn:
+	Gehe Schritt
+
+Drehe links
+
+Solange Baum rechts:
+	Gehe Schritt
+
+Drehe rechts
+Gehe Schritt
+Gehe Schritt
+
+[Positionieren, für Recyvcling vorbereiten]
+Drehe links
+Solange Baum links:
+	Gehe Schritt
+
+Drehe rechts
+Drehe rechts
+
+Gehe Schritt
+
+Drehe links
+
+[Auslegen]
+i = 2
+Solange i > 1:
+	b_h = b
+	l_h = l
+	
+	Solange b_h > 1:
+		Setze Kleeblatt
+		Gehe Schritt
+		b_h = b_h - 1
+	Drehe rechts
+
+	Solange l_h > 1:
+		Setze Kleeblatt
+		Gehe Schritt
+		l_h = l_h - 1
+	Drehe rechts
+	i = i - 1
