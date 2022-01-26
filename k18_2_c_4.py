@@ -5,4 +5,6 @@ while breite != n +1 :
     while breite <= hoehe :
         world.setLeaf(hoehe, breite, True)
         hoehe = hoehe -1
-    breite = breite +2
+    breite = breite + 2
+
+# Copyright J.R.
