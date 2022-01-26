@@ -10,4 +10,4 @@ Im der LICENCE-Datei steht drin, ob und wie ihr den Code aus diesem Repository v
 Wenn ihr am Smartphone seid müsst ihr (wenn ihr die Pythondateien nicht sehen könnt) auf "view code" klicken.
 
 ### Benennung:
-*k[nummer]_[aufgabennummer]_[teilaufgabennummer]_[...].py*
+*k[nummer]\_[aufgabennummer]\_[teilaufgabennummer]\_[...].py*
