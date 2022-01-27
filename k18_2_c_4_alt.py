@@ -1,13 +1,4 @@
-# NOT WORKING: in Development
-
-n = 5
-poslist = []
-
-for x in range(0, n, 1):
-    for y in range(0, n, 1):
-        if (y % 2) == 0:
-            poslist.append([x, y])
-            world.setLeaf(x, y, True)
-
-for pos in poslist:
-    world.setLeaf(pos[0], pos[1], True)
+seite = 5
+for height in range(0, seite, 1):
+  for width in range(0, height + 1, 2):
+    world.setLeaf(height, width, True)
