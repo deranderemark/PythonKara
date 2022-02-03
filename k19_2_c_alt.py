@@ -1,3 +1,6 @@
+# NICHT A.B. konform!!!
+
+
 position = []
 i = 1
 while i <= 4:
